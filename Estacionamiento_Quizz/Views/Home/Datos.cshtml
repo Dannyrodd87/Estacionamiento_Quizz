@@ -1,0 +1,38 @@
+﻿@model Estacionamiento_Quizz.Models.Carros
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Datos</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/Style.css" />
+</head>
+<body>
+    <div>
+        <header><br>
+        Instituto Tecnologico de Gustavo A. Madero<br>
+      </header>
+      <section><br>
+          <img src="@Url.Content(Model.Photo)" />
+        <p>No. Matricula: @Model.Matricula</p>
+        <p>Usuario: @Model.Name</p>
+        <p>No. de Control: @Model.NoCtrl</p>
+        <p>Carrera: @Model.Speciality</p>
+        <p>Semestre: @Model.Semester</p>
+        
+        <a href="http://localhost:49170/"><input type="button" value="Back"  /></a>
+      </section>
+      <footer>Elaboro: <br>
+        Garcia Vazquez Vanessa<br>
+        Vazquez Silva J. Divani<br>
+      </footer>
+        
+        
+    </div>
+</body>
+</html>

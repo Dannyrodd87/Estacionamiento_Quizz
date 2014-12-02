@@ -1,0 +1,40 @@
+﻿@model Estacionamiento_Quizz.Models.Carros
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/Style.css" />
+</head>
+<body>
+    <div>
+        <header><br>
+        Instituto Tecnologico de Gustavo A. Madero<br>
+      </header>
+      <section><br>
+          <span>
+           @using (Html.BeginForm())
+        {
+          
+            <h1> Ingresar la Matricula</h1>
+            
+            <p> @Html.TextBoxFor(matric => matric.Matricula)</p>
+            
+            <input type ="submit" value="USER"/>
+        }
+          </span>
+                 
+      </section>
+      <footer>Elaboro: <br>
+        Garcia Vazquez Vanessa<br>
+        Vazquez Silva J. Divani<br>
+      </footer>       
+    </div>
+</body>
+</html>
